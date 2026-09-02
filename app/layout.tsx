@@ -8,8 +8,9 @@ import { SiteFooter } from "@/components/site-footer"
 import { siteConfig, getSiteUrl } from "@/lib/site"
 import "./globals.css"
 
-const geistSans = Geist({
+const sansKr = IBM_Plex_Sans_KR({
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
   variable: "--font-geist-sans",
   display: "swap",
 })
@@ -67,7 +68,7 @@ export default function RootLayout({
     <html
       lang="ko"
       suppressHydrationWarning
-      className={`bg-background ${geistSans.variable} ${geistMono.variable}`}
+      className={`bg-background ${sansKr.variable} ${geistMono.variable}`}
     >
       <body className="font-sans antialiased">
         <ThemeProvider
