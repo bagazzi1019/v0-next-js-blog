@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { formatDate, formatDateISO } from "@/lib/format"
 import type { PostMeta } from "@/types/post"
+import { withBasePath } from "@/lib/site"
 
 export function PostCard({ post }: { post: PostMeta }) {
   return (
@@ -14,7 +15,7 @@ export function PostCard({ post }: { post: PostMeta }) {
           aria-hidden="true"
         >
           <Image
-            src={post.coverImage || "/placeholder.svg"}
+            src={withBasePath(post.coverImage || "/placeholder.svg")}
             alt=""
             fill
             sizes="(max-width: 640px) 100vw, 112px"

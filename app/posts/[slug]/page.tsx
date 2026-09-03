@@ -14,7 +14,7 @@ import { formatDate, formatDateISO } from "@/lib/format"
 import { TableOfContents } from "@/components/table-of-contents"
 import { PostCard } from "@/components/post-card"
 import { TagBadge } from "@/components/tag-badge"
-import { siteConfig, getSiteUrl } from "@/lib/site"
+import { siteConfig, getSiteUrl, withBasePath } from "@/lib/site"
 
 type Params = { slug: string }
 
@@ -137,7 +137,7 @@ export default async function PostPage({
         {post.coverImage && (
           <div className="relative mb-10 aspect-[2/1] overflow-hidden rounded-lg border border-border">
             <Image
-              src={post.coverImage || "/placeholder.svg"}
+              src={withBasePath(post.coverImage || "/placeholder.svg")}
               alt={post.title}
               fill
               priority
@@ -147,9 +147,9 @@ export default async function PostPage({
           </div>
         )}
 
-        <div className="gap-10 lg:grid lg:grid-cols-[1fr_200px]">
+        <div className="gap-10 lg:grid lg:grid-cols-[minmax(0,1fr)_200px]">
           <div
-            className="prose-content min-w-0"
+            className="prose min-w-0"
             dangerouslySetInnerHTML={{ __html: html }}
           />
 
