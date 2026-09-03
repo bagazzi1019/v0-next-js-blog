@@ -68,3 +68,19 @@ related:                      # 선택 (연관 글 slug)
 pnpm dev      # 개발 서버
 pnpm build    # 프로덕션 빌드
 ```
+
+## GitHub Pages 배포
+
+이 프로젝트는 `deploy` 브랜치에 push하면 GitHub Actions가 정적 사이트를 빌드해 GitHub Pages로 배포합니다.
+
+```bash
+git push -u origin deploy
+```
+
+최초 배포 전에 GitHub 저장소의 **Settings → Pages → Build and deployment → Source**를 **GitHub Actions**로 설정합니다. 프로젝트 저장소의 기본 주소는 다음과 같습니다.
+
+```text
+https://bagazzi1019.github.io/v0-next-js-blog/
+```
+
+GitHub Free에서는 공개 저장소로 설정해야 GitHub Pages를 무료로 사용할 수 있습니다.

@@ -12,6 +12,7 @@ slug: "nextjs-markdown-blog"
 related:
   - "typescript-project-setup"
   - "nextjs-seo-guide"
+  - "prompt-engineering-guide"
 ---
 
 정적인 콘텐츠를 다루는 개인 블로그라면 굳이 데이터베이스나 CMS가 필요하지 않습니다.

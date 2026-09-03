@@ -10,6 +10,7 @@ coverImage: "/images/posts/typescript-setup.png"
 slug: "typescript-project-setup"
 related:
   - "nextjs-markdown-blog"
+  - "prompt-engineering-guide"
 ---
 
 새 프로젝트를 만들 때마다 비슷한 설정을 반복하게 됩니다.

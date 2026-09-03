@@ -11,6 +11,7 @@ slug: "nextjs-seo-guide"
 related:
   - "nextjs-markdown-blog"
   - "typescript-project-setup"
+  - "prompt-engineering-guide"
 ---
 
 콘텐츠가 아무리 좋아도 검색에 노출되지 않으면 읽히지 않습니다.
